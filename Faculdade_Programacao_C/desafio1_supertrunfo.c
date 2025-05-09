@@ -10,6 +10,8 @@ int main() {
     float Area1;
     float Pib1;
     int TuristicPoint1;
+    float DensidadePop1;
+    float PIBperCap1;
 
     // Segunda Carta
     char State2;
@@ -19,6 +21,8 @@ int main() {
     float Area2;
     float Pib2;
     int TuristicPoint2;
+    float DensidadePop2;
+    float PIBperCap2;
     
     //Jogo do Super Trunfo
     printf("Super Trunfo\n");
@@ -45,14 +49,18 @@ int main() {
     printf("Pontos turisticos: \n");
     scanf("%d", &TuristicPoint1);
 
-    float DensidadePop1 = (double) Population1 / (double) Area1;
-    float PIBperCap1 = (double) Population1 / (double) Pib1 ;
+    // PIB: 699280000000.00
+    // Area: 1521.11
+    // Populacao: 12325000
+
+    DensidadePop1 = (float) Population1 / Area1;
+    PIBperCap1 =  Pib1 / (float) Population1;
 
     // Segunda Carta
 
     printf("Segunda Carta\n");
     
-    printf("Estado: \n");
+    printf("Estado: \n ");
     scanf("%c", &State2);
 
     printf("Codigo da carta: \n");
@@ -73,8 +81,12 @@ int main() {
     printf("Pontos turisticos: \n");
     scanf("%d", &TuristicPoint2);
 
-    float DensidadePop2 = (float) Population2 / Area2;
-    float PIBperCap2 = (float) Population2 / Pib2 ;
+    // PIB: 300500000000.00
+    // Area: 1200.25
+    // Populacao: 6748000
+
+    DensidadePop2 = (float) Population2 / Area2;
+    PIBperCap2 = Pib2 / (float) Population2; 
 
     // Showing the data
     
